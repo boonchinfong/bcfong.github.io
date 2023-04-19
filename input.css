@@ -96,7 +96,7 @@ nav{
     align-items: center;
     position: fixed;
     margin-top: -8rem;
-    margin-left: -8rem;
+    margin-left: 4rem;
     z-index: 99;
 }
 .logo{
@@ -206,4 +206,6 @@ nav{
         transform: translateX(0);
     }
 }
+
+
 

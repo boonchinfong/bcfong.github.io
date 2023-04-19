@@ -520,21 +520,33 @@ video {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 576px;
+    max-width: 640px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 960px;
+    max-width: 768px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1440px;
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
 
@@ -982,7 +994,7 @@ nav{
   align-items: center;
   position: fixed;
   margin-top: -8rem;
-  margin-left: -8rem;
+  margin-left: 4rem;
   z-index: 99;
 }
 
@@ -1149,7 +1161,7 @@ nav{
   outline-offset: 2px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1210,13 +1222,10 @@ nav{
     padding-bottom: 8rem;
   }
 
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
   .md\:font-bold {
     font-weight: 700;
   }
 }
+
+
 
