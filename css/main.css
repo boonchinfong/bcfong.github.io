@@ -520,33 +520,21 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 640px;
+    max-width: 576px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .container {
-    max-width: 768px;
+    max-width: 960px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1440px;
   }
 }
 
@@ -556,10 +544,6 @@ video {
 
 .left-6 {
   left: 1.5rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .right-6 {
@@ -595,13 +579,12 @@ video {
   margin-bottom: 5rem;
 }
 
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
 .mr-16 {
   margin-right: 4rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .mt-14 {
@@ -650,10 +633,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
@@ -777,11 +756,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -815,6 +789,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -835,11 +814,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -855,20 +829,9 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-96 {
-  padding-bottom: 24rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pr-32 {
-  padding-right: 8rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .text-left {
@@ -1015,7 +978,7 @@ nav{
 
 @keyframes nav-menu{
   0%{
-    transform: translateX(500px);
+    transform: translateX(200px);
   }
 
   100%{
@@ -1151,7 +1114,7 @@ nav{
   outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1200,6 +1163,16 @@ nav{
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:font-bold {
