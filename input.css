@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/patterrn-css.jpeg');
+    background-repeat: repeat;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#profile .img-container{
+    transition: 0.4s;
+}
+
+#profile .img-container:hover{
+    transform: scale(1.1);
+}
+
+/* Navigation Bar */
+
+
+.hamburger{
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    width: 24px;
+    height: 2px;
+    background: #000;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transition: 0.3ms;
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(7px) translate(7px);
+    transition: 0.3s;
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+    transition: 0.3s;
+}
+
+.slide{
+    animation: nav-menu 400ms;
+}
+
+@keyframes nav-menu{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0) forwards;
+    }
+}
+
+/* About Me */
+
+.container_img{
+    background: linear-gradient(45deg, transparent, rgb(82, 161, 160), transparent);
+    border-radius: 2rem;
+    width: 18rem;
+}
+
+.container_img img{
+    width: 18rem;
+    border-radius: 2rem;
+    transform: rotate(20deg);
+    transition: 0.4s;
+}
+
+.container_img img:hover{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+#profile_image{
+    animation: profile_image 3s;
+    position: relative;
+}
+
+@keyframes profile_image {
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#profile_me{
+    animation: profile_me 3s;
+    position: relative;
+}
+
+@keyframes profile_me {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#profile_name{
+    animation: profile_name 3s;
+    position: relative;
+}
+
+@keyframes profile_name {
+    0%{
+        transform: translateY(-300px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.about_slide_img{
+    animation: about_slide_img 3s;
+    position: relative;
+}
+
+@keyframes about_slide_img{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
