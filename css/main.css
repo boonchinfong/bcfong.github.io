@@ -1222,6 +1222,11 @@ nav{
     padding-bottom: 8rem;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:font-bold {
     font-weight: 700;
   }
